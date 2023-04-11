@@ -58,9 +58,22 @@ VALUES('Pizza'),
       ('Marmitas');
 
 
-INSERT INTO restaurante (nome,restaurante_id, endereco)
+INSERT INTO restaurante (nome, categoria_id, endereco)
 VALUES('Sofaronni', 1, "Rua do Pepperoni Japonês"),
       ('Calvo Lanches', 2, "Rua do Balão"),
       ('Salsichina', 3, "Avenida Azul"),
       ('Pastéis A4', 4, "Rua do Rei"),
-      ('Comidinhas Da Tia Tina', 5, "Rua de Todos Nós")
+      ('Comidinhas Da Tia Tina', 5, "Rua de Todos Nós");
+
+
+INSERT INTO cardapio (restaurante_id, descricao, valor)
+VALUES(1, 'Pepperoni Grande (8 pedaços)', 47.00),
+      (1, 'Frango com Catupiry (6 pedaços)', 25.00),
+      (2, 'Combo X-Bacon(Pão, Queijo, Bacon, Hamburguer, Fritas e Coca Cola 600ml)', 35.00),
+      (2, 'X-Tudo(Pão, Queijo, Bacon, Alface, Tomate, 2 Carnes, Cheddar, Acompanhado de Fritas e uma lata de Coca Cola)', 50.00),
+      (3, 'Americano (Pão, Salsicha, Mostarda)', 13.00),
+      (3, 'Jeitin Brasileiro (Pão, 2 Salsichas, Purê de batata, Maionese, Batata Palha)', 20.00),
+      (4, 'A4 Frango com Catupiry', 15.00),
+      (4,'A4 Calabresa com Catupiry', 15.00),
+      (5, 'Frango a Parmegiana com Suco natural de Laranja', 28.00),
+      (5, 'Bife Acebolado com pure de batata e Batata Frita + Coca Cola 600ml', 32.00);
