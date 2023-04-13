@@ -19,8 +19,8 @@ class Cardapio{
             return `SELECT * FROM cardapio WHERE id = ${this.id}`
     }
 
-    update(){
-        return `UPDATE cliente SET restaurante_id = '${this.restaurante_id}', descricao ='${this.descricao}', valor = ${this.valor}`;
+    update(id){
+        return `UPDATE cardapio SET descricao ='${this.descricao}', valor = ${this.valor} WHERE id =${id}` ;
     }
 
     delete(){

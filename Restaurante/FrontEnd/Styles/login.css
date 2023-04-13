@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Permanent+Marker&display=swap');
+/* font-family: 'Alfa Slab One', cursive;
+font-family: 'Permanent Marker', cursive; */
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #d24e01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card{
+    width: 700px;
+    height: 750px;
+    box-shadow: 20px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3.5rem;
+    gap:100px;
+}
+
+#email{
+    width:300px;
+    height: 45px;
+    margin-top: 100px;
+    
+}
+
+.div{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}

@@ -21,7 +21,7 @@ class Cliente {
     }
 
     update(){
-        return `UPDATE cliente SET nome = '${this.nome}', telefone = '${this.telefone}', endereco = '${this.endereco}'`;
+        return `UPDATE cliente SET nome = '${this.nome}', telefone = '${this.telefone}', email = '${this.email}', senha = '${this.senha}' WHERE id = ${this.id}`;
     }
 
     delete(){

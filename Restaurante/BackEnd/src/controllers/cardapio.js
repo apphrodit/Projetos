@@ -1,10 +1,10 @@
 const con = require("../dao/connection");
-const Restaurante = require("../models/restaurante");
+const Cardapio = require("../models/cardapio");
 
 
 const cadastrar = (req, res) => {
-    let restaurante = new Restaurante(req.body)
-    con.query(restaurante.create(), (err, result) => {
+    let cardapio = new Cardapio(req.body)
+    con.query(cardapio.create(), (err, result) => {
         if (err == null)
             res.status(201).end();
         else
@@ -13,17 +13,17 @@ const cadastrar = (req, res) => {
 }
 
 const listar = (req, res) => {
-    let restaurante = new Restaurante(req.params)
-    con.query(restaurante.read(), (err, result) => {
+    let cardapio = new Cardapio(req.params)
+    con.query(cardapio.read(), (err, result) => {
         if (err == null)
             res.json(result).end();
     })
 }
 
 const alterar = (req, res) => {
-    let restaurante = new Restaurante(req.body)
+    let cardapio = new Cardapio(req.body)
     const { id } = req.params;
-    con.query(restaurante.update(id), (err, result) => {
+    con.query(cardapio.update(id), (err, result) => {
         if(err) {
             console.error(err);
             res.status(500).send('Erro interno do servidor');
@@ -32,12 +32,14 @@ const alterar = (req, res) => {
         }else{
             res.status(404).end()
         }
+                
+           
     })
 }
 
 const excluir = (req, res) => {
-    let restaurante = new Restaurante(req.params)
-    con.query(restaurante.delete(), (err, result) => {
+    let cardapio = new Cardapio(req.params)
+    con.query(cardapio.delete(), (err, result) => {
         if(result.affectedRows > 0)
             res.status(204).end()
         else

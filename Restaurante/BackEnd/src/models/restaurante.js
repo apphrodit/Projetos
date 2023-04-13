@@ -19,8 +19,8 @@ class Restaurantes{
             return `SELECT * FROM restaurante WHERE id = ${this.id}`
     }
 
-    update(){
-        return `UPDATE restaurante SET nome = '${this.nome}', categoria_id = '${this.categoria_id}', endereco = '${this.endereco}'`;
+    update(id){
+        return `UPDATE restaurante SET nome = '${this.nome}', endereco = '${this.endereco}', WHERE id = ${id}`;
     }
 
     delete(){
