@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Permanent+Marker&display=swap');
-/* font-family: 'Alfa Slab One', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Alfa Slab One', cursive;
 font-family: 'Permanent Marker', cursive; */
 
 body{
     width: 100vw;
     height: 100vh;
-    background-color: #d24e01;
+    background-color: #2D6244;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,23 +17,34 @@ body{
 
 
 .card{
-    width: 700px;
+    width: 600px;
     height: 750px;
     box-shadow: 20px 20px;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: #c6ca8f;
     border-radius: 5px;
     font-family: 'Alfa Slab One', cursive;
     font-size: 3.5rem;
-    gap:100px;
+    font-weight: 400;
 }
 
+input{
+    width:350px;
+    height:55px;
+    padding: 10px;
+    border-radius: 3px;
+    outline: none;
+    border: 2px solid white ;
+    font-size: 1.2rem;
+    font-family:'Poppins', sans-serif;
+}
+
+p{
+    color: white ;
+}
 #email{
-    width:300px;
-    height: 45px;
-    margin-top: 100px;
-    
+    margin-top:85px;
 }
 
 .div{
@@ -38,4 +52,5 @@ body{
     display: flex;
     flex-direction: column;
     gap: 50px;
+    margin-top:100px;
 }
